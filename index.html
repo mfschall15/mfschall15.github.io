@@ -3,51 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coming Soon</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 600px;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .email {
-      font-size: 1rem;
-      opacity: 0.8;
-    }
-  </style>
+  <title>Marcus Schaller | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🚧 Coming Soon</h1>
-    <p>We're working hard to launch our site. Stay tuned!</p>
-    <p class="email">📬 Contact: mfschall15@gmail.com</p>
-  </div>
+  <header>
+    <h1>Marcus Schaller</h1>
+    <p>Computer Vision Engineer | Robotics | AI Enthusiast</p>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Work Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>Python, C++, MATLAB</li>
+        <li>OpenCV, PyTorch, TensorFlow</li>
+        <li>3D Reconstruction, SLAM, Depth Estimation</li>
+        <li>Linux, Git, Docker, AWS</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Work Experience</h2>
+
+      <div class="project">
+        <img src="media/cherry_image.PNG" alt="Cherry detection project" />
+        <div>
+          <h3>Cherry Detection for Robotic Harvesting</h3>
+          <ul>
+            <li>Trained a YOLO object detection model to identify ripe and unripe cherries.</li>
+            <li>Used foundational vision models to accelerate and improve data labeling workflows.</li>
+            <li>Deployed the model on a stereo camera system for real-time inference in the field.</li>
+            <li>Mapped cherry locations in 3D and estimated optimal picking angles using surface normal analysis.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="media/foundational_model.jpg" alt="Vision Model Research" />
+        <div>
+          <h3>3D Mapping Using Visual SLAM</h3>
+          <ul>
+            <li>Won a U.S. Navy computer vision challenge focused on object detection under out-of-domain and adversarial conditions.</li>
+            <li>Leveraged foundational models, including Grounding DINO and CLIP, to achieve robust zero-shot detection across challenging image distributions.</li>
+            <li>Demonstrated superior generalization and resilience against adversarial shifts compared to traditional supervised detectors.</li>
+            <li>The success of the project led to follow-on funding to develop MLOps tools for adversarial data detection and dataset quality analysis.</li>
+            <li>Expanded the work to support the U.S. Army by applying foundational models to tactical object detection scenarios with limited labeled data.</li>
+          </ul>
+          
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="media/disparity image.webp" alt="Stereo calibration and depth estimation" />
+        <div>
+          <h3>Camera Calibration & Depth Estimation</h3>
+          <ul>
+            <li>Worked on <a href="https://www.quartus.com/products/pixeltraq/" target="_blank">PixelTraq</a>, a high-precision camera calibration system for professional imaging and robotics.</li>
+            <li>Used PixelTraq to generate accurate intrinsic and extrinsic models for a custom stereo camera system.</li>
+            <li>Integrated calibrated stereo pairs into a vision pipeline for synchronized capture and depth estimation.</li>
+            <li>Applied deep learning disparity networks to generate high-fidelity depth maps from stereo images.</li>
+            <li>Enabled accurate 3D perception for use cases such as object localization and robotic manipulation.</li>
+          </ul>
+        </div>
+      </div>
+      
+
+      <!-- Add more image-based projects -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mfschall15@gmail.com">mfschall15@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/marcus-schaller/" target="_blank">https://www.linkedin.com/in/marcus-schaller/</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
 </body>
 </html>
